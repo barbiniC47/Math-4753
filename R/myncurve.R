@@ -5,7 +5,7 @@ myncurve <= function(mu, sigma, a){
   xcurve = seq(-Inf, a, length = 1000)
   ycurve = dnorm(xcurve, mu, sigma)
 
-  polygon(c(-Inf, xcurve, a), c(0, ycurve, 0), col = "blue")
+  polygon(c(-Inf, xcurve, a), c(0, ycurve, 0), col = "cyan")
 
   prob = round(pnorm(a, mu, sigma), 4)
   return(myncurve)
