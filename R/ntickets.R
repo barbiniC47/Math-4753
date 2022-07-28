@@ -50,6 +50,7 @@ ntickets <- function(N, gamma, p){
 ### NOW GETTING THE LIST OF VALUES ###
 
   mylist <- list(N=N, gamma=gamma, p=p, nd=n[fd], nc=nn[fc], ntickets=paste("N=",N, "gamma=", gamma, "p=", p, fun="Number of Tickets"))
+  mylist
   return(c(mylist, plotd, plotc))
 }
 
