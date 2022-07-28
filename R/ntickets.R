@@ -1,19 +1,20 @@
 #' ntickets function
 #'
-#' @importFrom summer4753bar ntickets
 #' @param N = Number of Plane Seats
 #' @param gamma = Probability of Overbooking
 #' @param p = Probability of Not Showing
 #'
-#' @return ntickets
+#' @return mylist, plotd, plotc
 #' @export
 #'
 #' @examples ntickets(N=200, gamma=0.02, p=0.95)
-#'
-#'
+#' @importFrom graphics 'lines' 'abline'
+#' @importFrom stats 'qbinom' 'pbinom' 'rnorm' 'pnorm'
+
 
 
 ntickets <- function(N, gamma, p){
+
 
 ### STARTING WITH THE FUNCTIONS ###
 
@@ -52,5 +53,20 @@ ntickets <- function(N, gamma, p){
   return(c(mylist, plotd, plotc))
 }
 
-ntickets(N=400, gamma=0.02, p=0.95)
+
+
+#   ── R CMD check results ───────────────────────────── summer4753bar 0.1.0 ────
+#   Duration: 15.1s
+
+#   ❯ checking DESCRIPTION meta-information ... NOTE
+#   License components which are templates and need '+ file LICENSE':
+#   MIT License
+
+#   ❯ checking top-level files ... NOTE
+#   Non-standard file/directory found at top level:
+#   'Rplots.pdf'
+
+#   0 errors ✔ | 0 warnings ✔ | 2 notes ✖
+
+#   R CMD check succeeded
 
