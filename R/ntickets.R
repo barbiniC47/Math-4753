@@ -4,10 +4,10 @@
 #' @param gamma = Probability of Overbooking
 #' @param p = Probability of Not Showing
 #'
-#' @return
+#' @return ntickets
 #' @export
 #'
-#' @examples
+#' @examples ntickets(N=200, gamma=0.02, p=0.95)
 #'
 #'
 
