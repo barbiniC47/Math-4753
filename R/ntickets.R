@@ -1,13 +1,13 @@
 #' ntickets function
 #'
-#' @param N
-#' @param y
-#' @param p
+#' @param N = Number of Plane Seats
+#' @param gamma = Probability of Overbooking
+#' @param p = Probability of Not Showing
 #'
-#' @return
-#' @export
+#' @return mylist, plotd, plotc
+#' @export ntickets
 #'
-#' @examples
+#' @examples none
 #'
 #'
 
@@ -51,5 +51,5 @@ ntickets <- function(N, gamma, p){
   return(c(mylist, plotd, plotc))
 }
 
-
+ntickets(N=400, gamma=0.02, p=0.95)
 
