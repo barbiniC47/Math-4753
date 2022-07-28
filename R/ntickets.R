@@ -1,5 +1,6 @@
 #' ntickets function
 #'
+#' @importFrom summer4753bar ntickets
 #' @param N = Number of Plane Seats
 #' @param gamma = Probability of Overbooking
 #' @param p = Probability of Not Showing
