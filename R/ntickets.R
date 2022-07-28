@@ -4,10 +4,10 @@
 #' @param gamma = Probability of Overbooking
 #' @param p = Probability of Not Showing
 #'
-#' @return mylist, plotd, plotc
-#' @export ntickets
+#' @return
+#' @export
 #'
-#' @examples none
+#' @examples
 #'
 #'
 
